@@ -2,11 +2,14 @@
   "name": "ideatolive",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://HoneyDaddy04.github.io/IdeaToLive",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
+    "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
